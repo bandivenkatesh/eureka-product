@@ -2,7 +2,7 @@
 
 @Library("com.i27academy.slb@main") _
 dockerPipeline(
-    appName: 'eureka-product',
+    appName: 'product',
     devHostPort: '1135',
     tstHostPort: '1134',
     stgHostPort: '1136',
