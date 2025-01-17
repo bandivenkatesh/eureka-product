@@ -12,7 +12,7 @@ spring:
     #    password: Learner@2023
     #    url: jdbc:mysql://34.29.125.76:3306,34.68.236.8:3306/learnerCrownClothing?useSSL=FALSE
     password: root
-    url: jdbc:mysql://localhost:3306/product_managment?useSSL=FALSE
+    url: jdbc:mysql://35.193.120.2:3306/product_managment?useSSL=FALSE
     username: root
   jpa:
     hibernate:
@@ -25,16 +25,16 @@ server:
 eureka:
   client:
     serviceUrl:
-      defaultZone: http://localhost:8761/eureka/
+      defaultZone: http://localhost:1234/eureka/
 ---
 spring:
   config:
     activate:
       on-profile: dev
   datasource:
-    password: Gcp@db2024
-    url: jdbc:mysql://104.198.135.46:3306/learnerCrownClothing?useSSL=FALSE
-    username: db_user
+    password: bandi
+    url: jdbc:mysql://35.193.120.2:3306/learnerCrownClothing?useSSL=FALSE
+    username: bandi
   jpa:
     hibernate:
       ddl-auto: update
