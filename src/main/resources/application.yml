@@ -47,3 +47,24 @@ eureka:
   client:
     serviceUrl:
       defaultZone: http://34.74.188.78:1234/eureka/
+---
+spring:
+  config:
+    activate:
+      on-profile: test
+  datasource:
+    password: bandi
+    url: jdbc:mysql://35.193.120.2:3306/learnerCrownClothing?useSSL=FALSE
+    username: bandi
+  jpa:
+    hibernate:
+      ddl-auto: update
+    properties:
+      hibernate:
+        dialect: org.hibernate.dialect.MySQLDialect
+server:
+  port: 8132
+eureka:
+  client:
+    serviceUrl:
+      defaultZone: http://34.74.188.78:1235/eureka/
